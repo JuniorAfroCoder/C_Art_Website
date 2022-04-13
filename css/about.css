@@ -1,0 +1,81 @@
+/* Biography Section */
+.biography{
+    width: 90vw;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+#image{
+    width: 100%;
+    position: relative;
+    padding-top: 1rem;
+    box-shadow: -20px 25px 0px 0px white;
+    
+}
+.image{
+    margin: 0 auto;
+}
+h1{
+    padding-left: 2rem;
+}
+p{
+    float:right;
+    padding-left: 2rem;
+}
+
+/* Artistic Approach Section */
+.artistic-approach{
+    width: 90vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+p{
+    padding-right: 2rem;
+}
+.artistic-approach h1{
+    float: right;
+    padding-right: 3rem;
+}
+
+/* Exhibitions Section */
+.exhibitions{
+    width: 90vw;
+    height: 100vh;
+    padding-top: 5rem;
+}
+.exhibitions h1{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+.exhibitions ul{
+    list-style: none;
+}
+.exhibitions li{
+    padding: 0 0 2rem 2rem;
+}
+
+@media screen and (max-width: 480px){
+    .biography,.artistic-approach{
+        flex-direction: column;
+        display: block;
+    }
+    .biography{
+        padding-top: 1rem;
+    }
+
+    #image,#mona-lisa{
+        width: 100%;
+        position: static;
+        object-fit: cover;
+        box-shadow: none;
+    }
+    .text-container{
+        padding: 1rem 0 0 0;
+    }
+    .text-container h1, .text-container p{
+        padding-bottom: 1rem;
+    }
+}

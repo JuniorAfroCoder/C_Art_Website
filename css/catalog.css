@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a, a:visited, a:hover{
+    text-decoration: none;
+}
+
+nav{
+    min-height: 100vh;
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav .main-container{
+    width: 100%;
+}
+ nav .main-container .link{
+    position: relative;
+    z-index: 10;
+    
+    cursor: pointer;
+    display: flex;
+    padding: 3rem 0;
+    justify-content: space-between;
+    z-index: 10;
+}
+nav .main-container .link:not(.last-link){
+    border-bottom: .01rem solid white;
+}
+
+.link h1{
+    display:flex;
+    position: relative;
+    z-index: 10;
+    font-size: 32px;
+    font-weight: 600;
+    mix-blend-mode: difference;
+    margin-left: 2rem;
+}
+#collections nav .fa-solid{
+    font-size: 700;
+    padding-top: 1.2rem;
+    position: relative;
+    z-index: 10;
+    mix-blend-mode: difference;
+    padding-right: 2rem;
+}
+.image-reveal {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: -50%;
+    left:-100%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    transform: scale(0.8);
+    transition: all 0.3s ease-out;
+    opacity: 0;
+}
+.image-reveal img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    transition: text-transform 0.3s ease-out;
+}
